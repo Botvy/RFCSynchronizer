@@ -3,8 +3,14 @@
     "version": "1.0.0",
     "license": "MIT",
     "scripts": {
+        "build": "tsc",
+        "build:watch": "tsc -w",
+        "predev": "npm run build",
+        "dev": "npm-run-all --parallel build:watch start:watch",
         "format:check": "prettier -l src",
-        "format:write": "prettier --write src"
+        "format:write": "prettier --write src",
+        "start": "node dist/main.js",
+        "start:watch": "nodemon dist/main.js"
     },
     "dependencies": {
         "@octokit/webhooks": "^7.2.0",
