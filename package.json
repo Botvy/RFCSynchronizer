@@ -6,6 +6,9 @@
         "format:check": "prettier -l src",
         "format:write": "prettier --write src"
     },
+    "dependencies": {
+        "reflect-metadata": "^0.1.13"
+    },
     "devDependencies": {
         "@types/node": "^13.13.0",
         "prettier": "^2.0.4",
