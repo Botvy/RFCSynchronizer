@@ -20,6 +20,12 @@ export class Application {
     async run() {
         this.logger.info('Running the RFC synchronizer');
 
-        await this.issueSynchronizer.synchronizeIssues();
+        try {
+            await this.issueSynchronizer.synchronizeIssues();
+        } catch (e) {
+            this.logger.error(`Could not synchronize the Github issues: ${e}`);
+
+            return;
+        }
     }
 }
