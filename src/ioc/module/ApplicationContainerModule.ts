@@ -3,7 +3,7 @@ import { Application } from '../../Application';
 
 export class ApplicationContainerModule extends ContainerModule {
     constructor() {
-        super(bind => {
+        super((bind) => {
             bind(Application).toSelf();
         });
     }
