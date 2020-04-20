@@ -15,6 +15,7 @@ export class LoggerContainerModule extends ContainerModule {
         const consoleTransport = new Console();
 
         return createLogger({
+            level: process.env.LOG_LEVEL ?? 'info',
             transports: [consoleTransport],
             format: format.combine(
                 format.colorize(),
