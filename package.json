@@ -8,7 +8,8 @@
     },
     "dependencies": {
         "inversify": "^5.0.1",
-        "reflect-metadata": "^0.1.13"
+        "reflect-metadata": "^0.1.13",
+        "typeorm": "^0.2.24"
     },
     "devDependencies": {
         "@types/node": "^13.13.0",
