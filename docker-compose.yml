@@ -1,0 +1,11 @@
+version: "3"
+services:
+    rfcsynchronizer:
+        image: botvy/rfc-synchronizer
+        build: .
+        container_name: rfc-synchronizer
+        environment:
+            GH_TOKEN: my-github-token
+        volumes:
+            - "./src:/app/src"
+            - "./node_modules:/app/node_modules"
