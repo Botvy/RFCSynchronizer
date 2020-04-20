@@ -17,7 +17,8 @@
         "discord.js": "^12.2.0",
         "inversify": "^5.0.1",
         "reflect-metadata": "^0.1.13",
-        "typeorm": "^0.2.24"
+        "typeorm": "^0.2.24",
+        "winston": "^3.2.1"
     },
     "devDependencies": {
         "@types/node": "^13.13.0",
