@@ -1,5 +1,12 @@
 {
-  "name": "@botvy/rfc-synchronizer",
-  "version": "1.0.0",
-  "license": "MIT"
+    "name": "@botvy/rfc-synchronizer",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "format:check": "prettier -l src",
+        "format:write": "prettier --write src"
+    },
+    "devDependencies": {
+        "prettier": "^2.0.4"
+    }
 }
