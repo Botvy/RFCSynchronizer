@@ -11,6 +11,9 @@
         "start": "node dist/main.js"
     },
     "dependencies": {
+        "@octokit/plugin-retry": "^3.0.1",
+        "@octokit/plugin-throttling": "^3.2.0",
+        "@octokit/rest": "^17.5.1",
         "@octokit/webhooks": "^7.2.0",
         "discord.js": "^12.2.0",
         "inversify": "^5.0.1",
