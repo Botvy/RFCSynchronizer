@@ -5,7 +5,7 @@
     "scripts": {
         "build": "tsc",
         "build:watch": "tsc -w",
-        "dev": "ts-node-dev --clear src/main.ts",
+        "dev": "ts-node-dev --clear --respawn src/main.ts",
         "format:check": "prettier -l src",
         "format:write": "prettier --write src",
         "start": "node dist/main.js"
