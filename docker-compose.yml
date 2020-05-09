@@ -12,7 +12,7 @@ services:
             DB_PASS: ""
             DB_NAME: rfc_synchronizer
     rfcsynchronizer-dev:
-        image: botvy/rfc-synchronizer
+        image: botvy/rfc-synchronizer:dev
         build:
             context: .
             dockerfile: dev.Dockerfile
