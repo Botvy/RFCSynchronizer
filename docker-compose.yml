@@ -28,3 +28,9 @@ services:
         volumes:
             - "./src:/app/src"
             - "./node_modules:/app/node_modules"
+    database:
+        image: library/mysql:5.7.30
+        container_name: database
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: rfc_synchronizer
