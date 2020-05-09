@@ -19,4 +19,4 @@ COPY tsconfig.json .
 RUN yarn build
 
 # Set the entrypoint
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
