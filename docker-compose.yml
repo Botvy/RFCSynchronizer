@@ -24,6 +24,7 @@ services:
             DB_USER: root
             DB_PASS: ""
             DB_NAME: rfc_synchronizer
+            LOG_LEVEL: debug
         volumes:
             - "./src:/app/src"
             - "./node_modules:/app/node_modules"
