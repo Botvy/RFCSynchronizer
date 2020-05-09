@@ -4,6 +4,8 @@ services:
         image: botvy/rfc-synchronizer
         build: .
         container_name: rfc-synchronizer
+        depends_on:
+            - database
         environment:
             GH_TOKEN: my-github-token
             DB_HOST: localhost
@@ -17,6 +19,8 @@ services:
             context: .
             dockerfile: dev.Dockerfile
         container_name: rfc-synchronizer
+        depends_on:
+            - database
         environment:
             GH_TOKEN: my-github-token
             DB_HOST: localhost
